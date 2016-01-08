@@ -12,8 +12,8 @@ totalWrapping input =
 
 dimensions :: String -> (Int, Int, Int)
 dimensions line = 
-    let p = map read $ splitOn "x" line
-    in (p !! 0, p !! 1, p !! 2)
+    let (w:l:h:_) = map read $ splitOn "x" line
+    in (w, l, h)
 
 wrapping :: (Int, Int, Int) -> Int
 wrapping (l, w, h) =

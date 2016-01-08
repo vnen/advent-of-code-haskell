@@ -1,0 +1,9 @@
+# Binaries
+*.bin
+*.hi
+*.o
+
+# Temp files
+*~
+*.swp
+
